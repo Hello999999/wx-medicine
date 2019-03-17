@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/location/location",
+    "pages/user/user",
+    "pages/note/note",
+    "pages/search/search",
+    "pages/dept/dept",
+    "pages/favorite/favorite",
+    "pages/hosp/hosp",
+    "pages/wallet/wallet",
+    "pages/put/put",
+    "pages/region/region",
+    "pages/test/test"
+  ],
+  "subpackages": [
+    {
+      "root": "admin",
+      "pages": [
+        "index/index",
+        "update/update",
+        "search/search",
+        "hosp/hosp_list/hosp_list",
+        "hosp/hosp_detail/hosp_detail",
+        "dept/dept_list/dept_list",
+        "dept/dept_detail/dept_detail"
+      ]
+    }
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于调用小程序位置接口"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "医疗挂号"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

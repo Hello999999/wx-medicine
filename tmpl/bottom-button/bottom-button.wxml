@@ -1,0 +1,11 @@
+<template name="bottom-button">
+    <view class="flex flex-y-center bottom-button">
+        <block wx:if="{{edit}}">
+            <button class="no-button iconfont icon-delete" catchtap="deleteEvent"></button>
+        </block>
+        <block wx:else>
+            <button class="no-button iconfont icon-add" data-url="{{navUrl}}" data-tag="add" catchtap="jump"></button>
+        </block>
+        <button class="no-button iconfont icon-edit" catchtap="editEvent"></button>
+    </view>
+</template>

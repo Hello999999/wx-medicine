@@ -1,0 +1,47 @@
+<import src="/tmpl/loading/loading.wxml" />
+<import src="/tmpl/list/list.wxml" />
+
+<block wx:if="{{loading}}">
+    <template is="loading" />
+</block>
+<block wx:else>
+    <view class="search">
+        <block wx:if="{{dept}}">
+            <view class="flex flex-y-center header dept">
+                <view class="flex-1 flex flex-y-center search-row">
+                    <view class="flex-0 iconfont icon-search" data-tag="dept" bindtap="searchHandle"></view>
+                    <input class="flex-1 input" value="{{keyword}}" placeholder="请输入科室名或医生名" placeholder-class="placeholder" maxlength="{{140}}" cursor-spacing="0" focus="{{focus}}" confirm-type="done" data-tag="dept" bindinput="inputHandle" bindfocus="focusHandle" bindblur="blurHandle" bindconfirm="confirmHandle" />
+                    <block wx:if="{{keyword}}">
+                        <view class="flex-0 iconfont icon-error" bindtap="reset"></view>
+                    </block>
+                </view>
+                <view class="flex-0 cancal" bindtap="cancal">取消</view>
+            </view>
+            <block wx:if="{{true}}">
+                <view class="wrapper">
+                    <view class="label">医生</view>
+                    <template is="doctor" data="{{doctorList}}" />
+                </view>
+            </block>
+            <block wx:if="{{false}}">
+                <view class="wrapper">
+                    <view class="label">科室</view>
+                    <template is="dept" data="{{deptList}}" />
+                </view>
+            </block>
+        </block>
+        <block wx:else>
+            <view class="header">
+                <view class="flex flex-y-center search-row">
+                    <view class="flex-0 iconfont icon-search" data-tag="hosp" bindtap="searchHandle"></view>
+                    <input class="flex-1 input" value="{{keyword}}" placeholder="请输入医院名称" placeholder-class="placeholder" maxlength="{{140}}" cursor-spacing="0" focus="{{focus}}" confirm-type="done" data-tag="hosp" bindinput="inputHandle" bindfocus="focusHandle" bindblur="blurHandle" bindconfirm="confirmHandle" />
+                    <block wx:if="{{keyword}}">
+                        <view class="flex-0 iconfont icon-error" bindtap="reset"></view>
+                    </block>
+                    <view class="flex-0 cancal" bindtap="cancal">取消</view>
+                </view>
+            </view>
+            <template is="hosp" data="{{hospList}}" />
+        </block>
+    </view>
+</block>

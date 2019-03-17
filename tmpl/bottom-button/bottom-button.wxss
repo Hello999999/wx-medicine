@@ -1,0 +1,31 @@
+.bottom-button {
+    position: fixed;
+    left: 275rpx;
+    bottom: 30rpx;
+    z-index: 101;
+    width: 200rpx;
+    height: 100rpx;
+    border-radius: 100rpx;
+    box-shadow: 0rpx 5rpx 20rpx rgba(0, 0, 0, .1);
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.bottom-button .icon-add,
+.bottom-button .icon-delete,
+.bottom-button .icon-edit {
+    width: 100rpx;
+    height: 100rpx;
+    font-size: 45rpx;
+    color: #666;
+    text-align: center;
+    line-height: 100rpx;
+}
+
+.bottom-button .icon-add,
+.bottom-button .icon-delete {
+    border-radius: 100rpx 0 0 100rpx;
+}
+
+.bottom-button .icon-edit {
+    border-radius: 0 100rpx 100rpx 0;
+}

@@ -1,0 +1,7 @@
+.hosp_detail {
+    padding: 0 30rpx;
+}
+
+.hosp_detail .wrapper {
+    margin-bottom: 50rpx;
+}

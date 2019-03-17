@@ -1,0 +1,37 @@
+<template name="hosp-list">
+  <view class="hosp-list">
+    <block wx:for="{{hospList}}" wx:key="index">
+      <view class="flex flex-y-center hosp-item" data-url="/admin/{{tag=='hosp'?'hosp/hosp_detail/hosp_detail':tag=='dept'?'dept/dept_list/dept_list':tag=='doctor'?'':''}}" data-id="{{item.hospitalId}}" data-i="{{index}}" bindtap="{{edit?'selectEvent':'jump'}}">
+        <block wx:if="{{edit}}">
+          <block wx:if="{{item.selected}}">
+            <view class="flex-0 iconfont icon-icon_selected_fill"></view>
+          </block>
+          <block wx:else>
+            <view class="flex-0 iconfont icon-icon_selected_no"></view>
+          </block>
+        </block>
+        <image class="flex-0 hosp-logo" mode="" src="{{item.hospitalLogo}}" />
+        <view class="flex-1 hosp-name">{{item.hospitalName}}</view>
+      </view>
+    </block>
+  </view>
+</template>
+
+<template name="dept-list">
+  <view class="dept-list">
+    <block wx:for="{{deptList}}" wx:key="index">
+      <view class="flex flex-y-center dept-item" data-url="/admin/dept/dept_detail/dept_detail" data-id="{{item.hospitalId}}" data-i="{{index}}" bindtap="{{edit?'selectEvent':'jump'}}">
+        <block wx:if="{{edit}}">
+          <block wx:if="{{item.selected}}">
+            <view class="flex-0 iconfont icon-icon_selected_fill"></view>
+          </block>
+          <block wx:else>
+            <view class="flex-0 iconfont icon-icon_selected_no"></view>
+          </block>
+        </block>
+        <image class="flex-0 hosp-logo" mode="" src="{{item.hospitalLogo}}" />
+        <view class="flex-1 hosp-name">{{item.hospitalName}}</view>
+      </view>
+    </block>
+  </view>
+</template>

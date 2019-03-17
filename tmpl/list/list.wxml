@@ -1,0 +1,51 @@
+<template name="hosp">
+    <view class="hosp-list">
+        <block wx:for="{{hospList}}" wx:key="index">
+            <view class="flex hosp-item" data-tag="hosp" data-i="{{index}}" bindtap="jump">
+                <image mode="" class="flex-0 logo" src="" />
+                <view class="flex-1 info">
+                    <view class="flex flex-y-center name">
+                        <view class="flex-0 tag">{{tag}}三甲</view>
+                        <view class="flex-1 line-1 txt">{{name}}南方医科大学南方医院</view>
+                    </view>
+                    <view class="line-1 desc">{{desc}}特色科室：整形美容外科 肾内科 病理科 神经科</view>
+                    <view class="line-1 address">{{address}}16.4km | 广东省广州市广州大道北路1838号</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</template>
+
+<template name="dept">
+    <view class="dept-list">
+        <block wx:for="{{deptList}}" wx:key="index">
+            <view class="flex hosp-item" data-tag="dept" data-i="{{index}}" bindtap="jump">
+                <image mode="" class="flex-0" src="" />
+                <view class="flex-1">
+                    <view class=""></view>
+                    <view class=""></view>
+                </view>
+                <view class="flex-0"></view>
+            </view>
+        </block>
+    </view>
+</template>
+
+<template name="doctor">
+    <view class="doctor-list">
+        <block wx:for="{{doctorList}}" wx:key="index">
+            <view class="flex flex-y-center doctor-item" data-tag="doctor" data-i="{{index}}" bindtap="jump">
+                <image mode="" class="flex-0 avatar" src="" />
+                <view class="flex-1 info">
+                    <view class="row">
+                        <text class="col name">李文成</text>
+                        <text class="col ">女</text>
+                        <text class="col ">主治医师</text>
+                    </view>
+                    <view class="row dept">儿科门诊(越秀)</view>
+                </view>
+                <view class="flex-0 iconfont icon-enter"></view>
+            </view>
+        </block>
+    </view>
+</template>

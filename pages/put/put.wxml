@@ -1,0 +1,45 @@
+<view class="put">
+    <view class="card">
+        <view class="flex header">
+            <view class="bank-card">储蓄卡</view>
+            <view class="iconfont icon-YUAN"></view>
+            <view class="info">
+                <view class="bank">xx银行</view>
+                <view class="note">单日交易限额￥50000.00</view>
+            </view>
+        </view>
+        <view class="container">
+            <view class="label">充值金额</view>
+            <view class="flex input-wrapper">
+                <view class="flex-0 unit">￥</view>
+                <input class="flex-1 input" type="digit" focus="{{true}}" data-tag="{{1}}" bindinput="input"/>
+            </view>
+            <button class="no-button next" bindtap="put">下一步</button>
+        </view>
+    </view>
+</view>
+
+<view class="pop" wx:if="{{showPop}}">
+    <view class="card">
+        <view class="flex flex-y-center header">
+            <view class="iconfont icon-guanbi" bindtap="close"></view>
+            <image class="avatar" src="" />
+            <view class="note">请输入支付密码</view>
+        </view>
+        <view class="container">
+            <view class="label">余额</view>
+            <view class="flex flex-x-center value">
+                <view class="unit">￥</view>
+                <view class="text">{{valueStr}}</view>
+            </view>
+            <view class="input-wrapper">
+                <view class="flex flex-y-center list">
+                    <block wx:for="{{6}}" wx:key="index">
+                        <view class="item" bindtap="itemTap"><block wx:if="{{length&&length>index}}">●</block></view>
+                    </block>
+                </view>
+                <input class="input" type="number" focus="{{focus}}" maxlength="{{6}}" data-tag="{{2}}" bindinput="input" />
+            </view>
+        </view>
+    </view>
+</view>

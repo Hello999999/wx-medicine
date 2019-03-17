@@ -1,0 +1,6 @@
+.no-more-data {
+    padding: 30rpx 0;
+    font-size: 32rpx;
+    color: #000;
+    text-align: center;
+}

@@ -1,0 +1,79 @@
+.image-bar,
+.input-bar,
+.textarea-bar,
+.location-bar {
+    padding: 40rpx 0;
+    border-bottom: 1px solid var(--borderColorTwo);
+}
+
+.image-bar .label,
+.input-bar .label,
+.textarea-bar .label,
+.location-bar .label {
+    margin-right: 30rpx;
+    line-height: 1;
+}
+
+.image-bar .icon-camera {
+    width: 140rpx;
+    height: 140rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 140rpx;
+    background-color: #ccc;
+}
+
+.image-bar .image {
+    width: 140rpx;
+    height: 140rpx;
+}
+
+.textarea-bar .textarea {
+    height: 250rpx;
+}
+
+.location-bar .icon-location {
+    margin-left: 30rpx;
+    color: var(--backgroundColorOne);
+}
+
+.button {
+    height: 100rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: var(--backgroundColorOne);
+}
+
+.button.m-l-r {
+    margin: 0 30rpx;
+}
+
+.image-data-bar,
+.data-bar {
+    border-bottom: 1px solid var(--borderColorOne);
+}
+
+.image-data-bar .label,
+.data-bar .label {
+    margin-right: 30rpx;
+    padding: 40rpx 0;
+    line-height: 1;
+}
+
+.image-data-bar .image {
+    width: 140rpx;
+    height: 140rpx;
+    margin: 20rpx 0;
+}
+
+.data-bar .value {
+    color: var(--colorOne);
+    text-align: right;
+    line-height: 1;
+}
+
+.data-bar .icon-enter {
+    margin-left: 10rpx;
+    color: var(--colorOne);
+}

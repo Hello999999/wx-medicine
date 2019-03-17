@@ -1,0 +1,11 @@
+.no-data {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    font-size: 32rpx;
+    color: #000;
+    background-color: #fff;
+}

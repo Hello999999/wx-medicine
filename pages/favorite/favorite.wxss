@@ -1,0 +1,57 @@
+.favorite {
+
+}
+
+.favorite .tab {
+    position: relative;
+    background-color: #fff;
+}
+
+.favorite .tab .label {
+    height: 120rpx;
+    font-size: var(--fontSizeOne);
+    line-height: 120rpx;
+    text-align: center;
+}
+
+.favorite .tab .label.selected {
+    color: var(--linkColor);
+}
+
+.favorite .tab .selected-status {
+    position: absolute;
+    bottom: 20rpx;
+    width: 30rpx;
+    height: 5rpx;
+    background-color: var(--linkColor);
+    transition: left 300ms ease-in 0s;
+}
+
+.favorite .container {
+
+}
+
+.favorite .container .list {
+    padding: 0rpx 30rpx;
+    background-color: #fff;
+}
+
+.favorite .container .list .item {
+    padding: 20rpx 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.favorite .container .list .item .img {
+    display: block;
+    width: 100rpx;
+    height: 100rpx;
+    margin-right: 30rpx;
+}
+
+.favorite .container .list .item .name {
+    font-size: var(--fontSizeOne);
+}
+
+.favorite .container .list .item .icon-enter {
+
+}

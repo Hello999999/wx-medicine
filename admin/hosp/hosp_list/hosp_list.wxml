@@ -1,0 +1,24 @@
+<import src="/tmpl/loading/loading.wxml" />
+<import src="/tmpl/admin-list/admin-list.wxml" />
+<import src="/tmpl/no-more-data/no-more-data.wxml" />
+<import src="/tmpl/no-data/no-data.wxml" />
+<import src="/tmpl/bottom-button/bottom-button.wxml" />
+
+<block wx:if="{{loading}}">
+  <template is="loading"></template>
+</block>
+<block wx:else>
+  <view class="hosp_list">
+    <block wx:if="{{noData}}">
+      <template is="no-data"></template>
+    </block>
+    <block>
+      <search-bar bindentersearch="enterSearch"></search-bar>
+      <template is="hosp-list" data="{{hospList, edit, tag}}"></template>
+      <block wx:if="{{loadMore||noMoreData}}">
+        <template is="no-more-data" data="{{loadMore}}"></template>
+      </block>
+    </block>
+    <template is="bottom-button" data="{{edit, navUrl}}"></template>
+  </view>
+</block>

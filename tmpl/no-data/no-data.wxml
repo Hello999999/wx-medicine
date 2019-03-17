@@ -1,0 +1,3 @@
+<template name="no-data">
+    <view class="flex flex-x-center flex-y-center no-data">{{text?text:'暂无数据'}}</view>
+</template>

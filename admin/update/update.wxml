@@ -1,0 +1,18 @@
+<import src="/tmpl/bar-tmpl/bar-tmpl.wxml" />
+
+<view class="update">
+    <view class="wrapper">
+        <template is="data-bar" data="{{label, value, update: true}}"></template>
+        <block wx:if="{{name=='address'}}">
+            <template is="location-bar"
+                data="{{address: keyword, placeholder: '请输入新的'+label, focus: true, update: true}}"></template>
+        </block>
+        <block wx:elif="{{name=='introduction'}}">
+            <template is="textarea-bar" data="{{placeholder: '请输入新的'+label, focus: true, update: true}}"></template>
+        </block>
+        <block wx:else>
+            <template is="input-bar" data="{{placeholder: '请输入新的'+label, focus: true, update: true}}"></template>
+        </block>
+    </view>
+    <template is="button-bar" data="{{text: '确认', update: true}}"></template>
+</view>

@@ -1,0 +1,32 @@
+<view class="user">
+    <block wx:if="{{isLogin}}">
+        <view class="header">
+            <image mode="" class="avatar" src="{{avatarUrl}}" />
+            <view class="line-1 username">{{nickName}}</view>
+        </view>
+    </block>
+    <block wx:else>
+        <button hover-class="none" class="no-button header" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            <!-- <image mode="" class="avatar" src="" /> -->
+            <view class="iconfont icon-caidan08"></view>
+            <view class="username">立即登录</view>
+        </button>
+    </block>
+    <view class="container">
+        <view class="list">
+            <block wx:for="{{list}}" wx:key="index">
+                <view class="item" data-i="{{index}}" bindtap="jump">
+                    <view class="flex flex-y-center item-wrapper">
+                        <!-- <image mode="" class="flex-0 img" src="" /> -->
+                        <view class="flex-0 iconfont icon-image"></view>
+                        <view class="flex-1 label">{{item.name}}</view>
+                        <block wx:if="{{index==0}}">
+                            <view class="flex-0 balance">0.00 元</view>
+                        </block>
+                        <view class="flex-0 iconfont icon-enter"></view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>

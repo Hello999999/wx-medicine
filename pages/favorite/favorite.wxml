@@ -1,0 +1,19 @@
+<view class="favorite">
+    <view class="flex flex-y-center tab">
+        <view class="flex-1 label {{currentIndex==0?'selected':''}}" data-i="{{0}}" bindtap="tabTap">医院</view>
+        <view class="flex-1 label {{currentIndex==1?'selected':''}}" data-i="{{1}}" bindtap="tabTap">医生</view>
+        <view class="selected-status" style="width:{{statusWidth}}rpx; left:{{tabStatus[currentIndex]}}px;"></view>
+    </view>
+    <view class="container">
+        <view class="list">
+            <block wx:for="{{list}}" wx:key="index">
+                <view class="flex flex-y-center item" data-tag="{{currentIndex==0?'hosp':'doctor'}}" data-i="{{index}}" bindtap="jump">
+                    <image mode="" class="flex-0 img" src="" />
+                    <view class="flex-1 name">南方医科大学南方医院</view>
+                    <view class="flex-0 iconfont icon-enter"></view>
+                </view>
+            </block>
+        </view>
+        <view class="" hidden="{{true}}">暂无收藏</view>
+    </view>
+</view>

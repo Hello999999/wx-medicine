@@ -1,0 +1,5 @@
+<import src="/tmpl/loading/loading.wxml" />
+
+<view class="dept_detail">
+
+</view>

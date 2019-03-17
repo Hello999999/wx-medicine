@@ -1,0 +1,15 @@
+<view class="search-bar">
+    <block wx:if="{{searchInput}}">
+        <view class="flex flex-y-center search">
+            <view class="flex-0 iconfont icon-search"></view>
+                <input class="flex-1 input" placeholder-class="placeholder" placeholder="{{placeholder}}" focus confirm-type="search" bindinput="input" bindconfirm="confirm" />
+            <view class="flex-0 btn" data-tag="{{showSearch?'search':'cancel'}}" bindtap="searchEvent">{{showSearch?'搜索':'取消'}}</view>        
+        </view>
+    </block>
+    <block wx:else>
+        <view class="flex flex-y-center search" bindtap="enterSearch">
+            <view class="flex-0 iconfont icon-search"></view>
+            <view class="flex-1 placeholder">{{placeholder}}</view>
+        </view>
+    </block>
+</view>

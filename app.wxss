@@ -1,0 +1,9 @@
+@import "./assets/style/default.wxss";
+@import "./assets/iconfont/iconfont.wxss";
+@import "./tmpl/loading/loading.wxss";
+@import "./tmpl/list/list.wxss";
+@import "./tmpl/admin-list/admin-list.wxss";
+@import "./tmpl/no-more-data/no-more-data.wxss";
+@import "./tmpl/no-data/no-data.wxss";
+@import "./tmpl/bottom-button/bottom-button.wxss";
+@import "./tmpl/bar-tmpl/bar-tmpl.wxss";

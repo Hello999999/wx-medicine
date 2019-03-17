@@ -1,0 +1,33 @@
+@import "../../assets/style/default.wxss";
+@import "../../assets/iconfont/iconfont.wxss";
+
+.search-bar {
+    padding: 30rpx;
+    background-color: #fff;
+}
+
+.search {
+    height: 80rpx;
+    border-radius: 80rpx;
+    background-color: #f0f0f0;
+}
+
+.icon-search {
+    margin: 0 30rpx;
+    font-size: 40rpx;
+    color: #888;
+}
+
+.input {
+    font-size: 32rpx;
+}
+
+.placeholder {
+    font-size: 32rpx;
+    color: #888;
+}
+
+.btn {
+    margin: 0 30rpx;
+    font-size: 32rpx;
+}

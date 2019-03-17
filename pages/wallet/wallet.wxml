@@ -1,0 +1,13 @@
+<view class="wallet">
+    <view class="header">
+        <view class="label">账户余额(元)</view>
+        <view class="balance">0.00</view>
+    </view>
+    <view class="container">
+        <view class="flex flex-y-center row" bindtap="jump">
+            <view class="flex-0 iconfont icon-image"></view>
+            <view class="flex-1 label">充值</view>
+            <view class="flex-0 iconfont icon-enter"></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,39 @@
+<import src="/tmpl/list/list.wxml" />
+
+<view class="location">
+    <view class="header">
+        <view class="flex flex-y-center search">
+            <view class="flex-0 iconfont icon-search"></view>
+            <input class="flex-1 input" placeholder="输入城市名、拼音或字母查询" placeholder-class="placeholder" confirm-type="search" bindinput="input" bindconfirm="confirm" />
+        </view>
+    </view>
+    <view class="flex container" style="height:{{containerHeight}}px;">
+        <scroll-view scroll-y scroll-into-view="{{id}}" class="flex-1 city-wrapper">
+            <block wx:if="{{!searching}}">
+                <view class="current-city" id="top">
+                    <view class="label">你所在的地区</view>
+                    <view hover-class="hover-class1" class="city" data-tag="{{localCity}}" bindtap="selected">{{localCity}}</view> 
+                </view>
+            </block>
+            <view class="city-list">
+                <block wx:for="{{cityList}}" wx:key="index">
+                    <block wx:if="{{!searching&&(index==0||(index>0&&cityList[index].idx!=cityList[index-1].idx))}}">
+                        <view class="initial" id="{{item.id}}">{{item.idx}}</view>
+                    </block>
+                    <view hover-class="hover-class1" class="city" data-tag="{{item.name}}" bindtap="selected">{{item.fullName||item.name}}</view>                
+                </block>
+                <block wx:if="{{cityList.length==0}}">
+                    <view class="no-data">无结果</view>
+                </block>
+            </view>
+        </scroll-view>
+        <block wx:if="{{!searching}}">
+            <view class="flex-0 initial-list" style="height:{{containerHeight}}px;">
+                <view hover-class="hover-class2" class="initial" data-i="{{0}}" bindtap="initialTap">当前</view>
+                <block wx:for="{{initialList}}" wx:key="index">
+                    <view hover-class="hover-class2" class="initial" data-i="{{index+1}}" bindtap="initialTap">{{item}}</view>
+                </block>
+            </view>
+        </block>
+    </view>
+</view>

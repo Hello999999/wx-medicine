@@ -1,0 +1,25 @@
+<import src="/tmpl/loading/loading.wxml" />
+
+<block wx:if="{{loading}}">
+    <template is="loading" />
+</block>
+<block wx:else>
+    <view class="dept">
+        <view class="header">
+            <view class="flex flex-x-center flex-y-center search" data-tag="search" bindtap="jump">
+                <view class="iconfont icon-search"></view>
+                <view class="txt">搜索科室或医生</view>
+            </view>
+        </view>
+        <view class="container">
+            <view class="dept-list">
+                <block wx:for="{{2}}" wx:key="index">
+                    <view class="flex flex-y-center item" data-tag="dept" data-i="{{index}}" bindtap="jump">
+                        <view class="flex-1 line-1 name">外科</view>
+                        <view class="flex-0 iconfont icon-enter"></view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</block>

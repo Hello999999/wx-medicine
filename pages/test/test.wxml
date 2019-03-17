@@ -1,0 +1,18 @@
+<view class="test">
+    <button bindtap="chooseImage">选择图片</button>
+    <image class="" src="{{}}"></image>
+    <button bindtap="upload">上传</button>
+</view>
+
+<!-- <view class="card {{show_pop?pop_type&&pop_type=='card'?'':'hidden':'hidden'}}">
+    <view class="header">{{cardData.title}}</view>
+    <view class="container">
+        <input class="card-input" maxlength="{{1024}}" focus placeholder="请输入图片地址" binginput="cardInput" />
+    </view>
+    <view class="flex flex-y-center footer">
+        <button class="no-button flex-1 card-btn cancel-btn" data-tag="cancel"
+            catchtap="cardTap">{{cardData.cancel}}</button>
+        <button class="no-button flex-1 card-btn confirm-btn" data-tag="confirm"
+            catchtap="cardTap">{{cardData.confirm}}</button>
+    </view>
+</view> -->

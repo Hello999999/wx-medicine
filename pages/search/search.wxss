@@ -1,0 +1,84 @@
+.search {
+    /* padding: 120rpx 0 0; */
+}
+
+.header {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+    padding: 20rpx 30rpx;
+    background-color: #fff;
+    /* box-sizing: border-box; */
+}
+
+.placeholder {
+    font-size: 32rpx;
+}
+
+/* 医院搜索 start */
+.header .search-row {
+    /* height: 40rpx; */
+    padding: 20rpx 30rpx;
+    border-radius: 40rpx;
+    background-color: #f5f5f5;
+}
+
+.header .search-row .icon-search {
+    font-size: 46rpx;
+    color: #666;
+}
+
+.header .search-row .input {
+    /* height: 40rpx; */
+    /* min-height: 40rpx; */
+    margin: 0 10rpx;
+    font-size: 32rpx;
+}
+
+.header .search-row .icon-error {
+    margin-right: 20rpx;
+    padding-right: 20rpx;
+    border-right: 1px solid #666;
+    color: #666;
+}
+
+.header .search-row .cancal {
+    font-size: 32rpx;
+    color: #666;
+    line-height: 1;
+}
+/* 医院搜索 end */
+
+/* 科室搜索 start */
+.header.dept .search-row {
+    border-radius: 8rpx;
+}
+
+.header.dept .search-row .icon-search {
+}
+
+.header.dept .search-row .input {
+}
+
+.header.dept .search-row .icon-error {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+}
+
+.header.dept .cancal {
+    padding-left: 20rpx;
+    font-size: 32rpx;
+    color: #666;
+    line-height: 1;
+}
+/* 科室搜索 end */
+
+.wrapper .label {
+    padding: 20rpx 30rpx;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 32rpx;
+    color: #666;
+    background-color: #fff;
+}

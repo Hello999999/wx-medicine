@@ -1,0 +1,8 @@
+<view class="region-list">
+    <block wx:for="{{regionList}}" wx:key="index">
+        <view class="flex flex-y-center region-item" data-id="{{item[4]}}" data-name="{{item[0]}}" bindtap="chooseRegion">
+            <view class="flex-1 label">{{item[0]}}</view>
+            <view class="flex-0 iconfont icon-enter"></view>
+        </view>
+    </block>
+</view>

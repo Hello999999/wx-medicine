@@ -1,0 +1,41 @@
+.header {
+  background: url('http://127.0.0.1/bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 250rpx 30rpx 20rpx;
+}
+
+.location {
+  margin-right: 20rpx;
+  text-align: center;
+}
+
+.location .city {
+  margin-right: 10rpx;
+  font-size: 32rpx;
+  color: var(--colorOne);
+}
+
+.location .icon-xiajiantou {
+  font-size: 32rpx;
+  color: var(--colorOne);
+}
+
+.search {
+  width: 450rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  padding: 0 20rpx;
+  line-height: 80rpx;
+  background-color: #fff;
+}
+
+.search .icon-search {
+  font-size: 38rpx;
+  color: var(--colorOne);
+}
+
+.search .text {
+  margin-left: 10rpx;
+  font-size: var(--fontSizeOne);
+  color: var(--colorOne);
+}

@@ -1,0 +1,6 @@
+<view class="admin-index">
+    <navigator class="admin-item" url="/admin/hosp/hosp_list/hosp_list?tag=hosp">医院管理</navigator>
+    <navigator class="admin-item" url="/admin/hosp/hosp_list/hosp_list?tag=dept">科室管理</navigator>
+    <navigator class="admin-item" url="/admin/hosp/hosp_list/hosp_list?tag=doctor">医生管理</navigator>
+    <!-- <navigator class="admin-item" url="/admin/hosp/hosp_list/hosp_list">用户管理</navigator> -->
+</view>

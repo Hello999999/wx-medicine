@@ -1,0 +1,169 @@
+.put {
+    padding: 40rpx 30rpx;
+}
+
+.put .card {
+    box-shadow: 0px 1px 40px 0px rgba(229, 229, 229, 0.659);
+}
+
+.put .card .header {
+    padding: 50rpx 60rpx;
+    background-color: #fefefe;
+}
+
+.put .card .header .bank-card {
+    margin-right: 70rpx;
+    font-size: var(--fontSizeOne);
+}
+
+.put .card .header .icon-YUAN {
+    margin-right: 10rpx;
+    padding-top: 8rpx;
+}
+
+.card .header .info {
+
+}
+
+.put .card .header .info .bank {
+    margin-bottom: 20rpx;
+    font-size: var(--fontSizeOne);
+    color: var(--linkColor);
+}
+
+.put .card .header .info .note {
+    color: var(--colorOne);
+    font-size: 28rpx;
+}
+
+.put .card .container {
+    padding: 50rpx 60rpx 80rpx;
+    background-color: #fff;
+}
+
+.put .card .container .label {
+    font-size: var(--fontSizeOne);
+}
+
+.put .card .container .input-wrapper {
+    padding: 20rpx 0;
+    margin-bottom: 50rpx;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.put .card .container .input-wrapper .unit {
+    margin-right: 10rpx;
+    font-size: 60rpx;
+    font-weight: bold;
+}
+
+.put .card .container .input-wrapper .input {
+    height: 110rpx;
+    font-size: 100rpx;
+    font-weight: bold;
+}
+
+.put .card .container .next {
+    width: 100%;
+    height: 100rpx;
+    border-radius: 10rpx;
+    font-size: 34rpx;
+    color: #fff;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: #09bb07;
+}
+
+.pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding: 30rpx;
+    background-color: rgba(0, 0, 0, .6);
+    box-sizing: border-box;
+}
+
+.pop .card {
+    width: 100%;
+    background-color: #fdfdfd;
+}
+
+.pop .card .header {
+    padding: 20rpx 0;
+    border-bottom: 1px solid rgba(9, 187, 6, .4);
+}
+
+.pop .card .header .icon-guanbi {
+    padding: 20rpx;
+    font-size: 26rpx;
+    color: var(--colorOne);
+}
+
+.pop .card .avatar {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 6rpx;
+    margin-right: 10rpx;
+}
+
+.pop .card .note {
+    font-size: 32rpx;
+}
+
+.pop .card .container {
+    padding: 20rpx 0;
+}
+
+.pop .card .container .label {
+    font-size: var(--fontSizeOne);
+    text-align: center;
+}
+
+.pop .card .container .value {
+    margin-bottom: 20rpx;
+}
+
+.pop .card .container .value .unit {
+    /* margin-right: 10rpx; */
+    font-size: var(--fontSizeOne);
+    font-weight: bold;
+}
+
+.pop .card .container .value .text {
+    font-size: 50rpx;
+    line-height: 1;
+}
+
+.pop .card .container .input-wrapper {
+    padding: 0 30rpx;
+}
+
+.pop .card .container .input-wrapper .list {
+    border: 1px solid rgba(0, 0, 0, .4);
+}
+
+.pop .card .container .input-wrapper .list .item:first-child {
+    border-left: 0;
+    background-color: #fff;
+}
+
+.pop .card .container .input-wrapper .list .item {
+    width: calc(100%/6);
+    height: 100rpx;
+    border-left: 1px solid #f5f5f5;
+    font-size: 40rpx;
+    color: #000;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: #fff;
+}
+
+.pop .card .container .input-wrapper .input {
+    position: absolute;
+    left: 0;
+    top: -9999rpx;
+    
+}

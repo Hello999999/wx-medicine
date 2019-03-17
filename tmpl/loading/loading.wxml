@@ -1,0 +1,6 @@
+<template name="loading">
+  <view class="flex flex-x-center flex-y-center loading">
+      <image class="img" src="/assets/images/loading.gif" />
+      <view class="txt">{{text?text:'页面加载中...'}}</view>
+  </view>
+</template>

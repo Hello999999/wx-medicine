@@ -1,0 +1,10 @@
+<import src="/tmpl/loading/loading.wxml" />
+
+<block wx:if="{{loading}}">
+    <template is="loading" />
+</block>
+<block wx:else>
+    <view class="note">
+
+    </view>
+</block>

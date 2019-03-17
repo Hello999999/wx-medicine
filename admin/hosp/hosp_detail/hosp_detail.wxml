@@ -1,0 +1,28 @@
+<import src="/tmpl/loading/loading.wxml" />
+<import src="/tmpl/bar-tmpl/bar-tmpl.wxml" />
+
+<view class="hosp_detail {{tag?'':'bg-white'}}">
+  <block wx:if="{{tag}}">
+    <view class="wrapper">
+      <template is="image-bar" data="{{label: '医院图标', hospitalLogo}}"></template>
+      <template is="input-bar" data="{{label: '医院名称', placeholder: '请输入医院名称', name: 'hospitalName'}}"></template>
+      <template is="input-bar" data="{{label: '联系方式', placeholder: '请输入医院联系方式', name: 'contacts'}}"></template>
+      <template is="location-bar" data="{{label: '详细地址', placeholder: '请输入医院地址', name: 'address', address}}"></template>
+      <template is="textarea-bar" data="{{label: '医院简介', placeholder: '请输入医院简介', name: 'introduction'}}"></template>
+    </view>
+    <template is="button-bar" data="{{text: '添加'}}"></template>
+  </block>
+  <block wx:else>
+    <block wx:if="{{loading}}">
+      <template is="loading"></template>
+    </block>
+    <block wx:else>
+      <template is="image-data-bar"
+        data="{{tag: 'hosp', label: '医院图标', name: 'hospitalLogo', value: hospDetail.hospitalLogo}}"></template>
+      <template is="data-bar" data="{{label: '医院名称', name: 'hospitalName', value: hospDetail.hospitalName}}"></template>
+      <template is="data-bar" data="{{label: '联系方式', name: 'contacts', value: hospDetail.contacts}}"></template>
+      <template is="data-bar" data="{{label: '医院地址', name: 'address', value: hospDetail.address}}"></template>
+      <template is="data-bar" data="{{label: '医院简介', name: 'introduction', value: hospDetail.introduction}}"></template>
+    </block>
+  </block>
+</view>

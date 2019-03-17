@@ -1,0 +1,56 @@
+<template name="image-bar">
+    <label class="image-bar flex flex-y-center">
+        <view class="label flex-1">医院图标</view>
+        <block wx:if="{{hospitalLogo}}">
+            <image class="flex-0 image" src="{{hospitalLogo}}" bindtap="chooseImage" />
+        </block>
+        <block wx:else>
+            <view class="flex-0 iconfont icon-camera" bindtap="chooseImage"></view>
+        </block>
+    </label>
+</template>
+
+<template name="input-bar">
+    <label class="input-bar flex flex-y-center {{update?'n-b bg-white':''}}">
+        <view class="label flex-0" hidden="{{update}}">{{label}}</view>
+        <input class="input flex-1" placeholder="{{placeholder}}" focus="{{focus}}" data-name="{{name}}"
+            bindinput="input" />
+    </label>
+</template>
+
+<template name="textarea-bar">
+    <label class="textarea-bar flex n-b {{update?'bg-white':''}}">
+        <view class="label flex-0" hidden="{{update}}">{{label}}</view>
+        <textarea class="textarea flex-1" placeholder="{{placeholder}}" maxlength="{{1024}}" focus="{{focus}}" data-name="{{name}}"
+            bindinput="input"></textarea>
+    </label>
+</template>
+
+<template name="location-bar">
+    <label class="location-bar flex flex-y-center {{update?'n-b bg-white':''}}">
+        <view class="label flex-0" hidden="{{update}}">{{label}}</view>
+        <input class="input flex-1" value="{{address}}" placeholder="{{placeholder}}" focus="{{focus}}"
+            data-name="{{name}}" bindinput="input" bindblur="blur" />
+        <view class="flex-0 iconfont icon-location" catchtap="chooseLocation"></view>
+    </label>
+</template>
+
+<template name="button-bar">
+    <button class="no-button button {{update?'m-l-r':''}}" bindtap="buttonEvent">{{text}}</button>
+</template>
+
+<template name="image-data-bar">
+    <view class="flex flex-y-center image-data-bar" data-tag="hosp" data-name="{{name}}" bindtap="chooseImage">
+        <view class="flex-1 label">{{label}}</view>
+        <image class="flex-0 image" src="{{value}}" />
+    </view>
+</template>
+
+<template name="data-bar">
+    <view class="flex flex-y-center data-bar" data-label="{{label}}" data-name="{{name}}" data-value="{{value}}"
+        bindtap="updateHosp">
+        <view class="flex-0 label">{{label}}</view>
+        <view class="flex-1 value">{{value}}</view>
+        <view class="flex-0 iconfont icon-enter" hidden="{{update}}"></view>
+    </view>
+</template>

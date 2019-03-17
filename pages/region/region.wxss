@@ -1,0 +1,18 @@
+.region-list {
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.region-list .region-item {
+    padding: 40rpx;
+    border-top: 1px solid #f5f5f5;
+}
+
+.region-list .region-item .label {
+    font-size: 34rpx;
+}
+
+.region-list .region-item .icon-enter {
+    font-size: 34rpx;
+    color: var(-borderColorTwo);
+}

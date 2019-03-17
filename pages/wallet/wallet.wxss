@@ -1,0 +1,41 @@
+.wallet {
+    
+}
+
+.wallet .header {
+    padding: 80rpx 30rpx 40rpx;
+    color: #fff;
+    background-color: #09bb07;
+}
+
+.wallet .header .label {
+    margin-bottom: 30rpx;
+    font-size: var(--fontSizeOne);
+}
+
+.wallet .header .balance {
+    font-size: 80rpx;
+}
+
+.wallet .container {
+
+}
+
+.wallet .container .row {
+    padding: 30rpx;
+    background-color: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.wallet .container .row .icon-image {
+    margin-right: 20rpx;
+}
+
+.wallet .container .row .label {
+    font-size: var(--fontSizeOne);
+}
+
+.wallet .container .row .icon-image,
+.wallet .container .row .icon-enter {
+    font-size: 36rpx;
+}

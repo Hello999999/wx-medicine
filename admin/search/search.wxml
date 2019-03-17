@@ -1,0 +1,6 @@
+<import src="/tmpl/admin-list/admin-list.wxml" />
+
+<view class="search">
+    <search-bar searchInput bindsearchevent="searchEvent"></search-bar>
+    <template is="hosp-list" data="{{hospList}}"></template>    
+</view>

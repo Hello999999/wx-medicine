@@ -1,0 +1,3 @@
+<template name="no-more-data">
+    <view class="no-more-data">{{loadMore?'加载中...':'没有更多了...'}}</view>
+</template>
